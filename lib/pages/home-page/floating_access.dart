@@ -11,7 +11,7 @@ class FloatingAcessBar extends StatefulWidget {
 
 class _FloatingAcessBarState extends State<FloatingAcessBar> {
   
-  List _isHovering=[false,false,false,false];
+  final List _isHovering=[false,false,false,false];
   List<Widget> rowElement=[];
 
   List<String> items=['Web-3','Decentralized token','Crypto-Curency','Finance'];

@@ -10,13 +10,13 @@ class FeaturedTiles extends StatelessWidget {
   final Size screenSize;
 
   final List<String> assets = [
-    'assets/image/test1.jpeg',
+    'assets/image/web6.jpg',
     'assets/image/web1.jpg',
     'assets/image/web2.jpg',
   ];
 
   final List<String> title = [
-    'Sci-fi',
+    'A data structure is a specialized format \for organizing, processing, retrieving and storing data.',
     'Coding is a language just like spanish and other',
     'Learn how technology works'
   ];
