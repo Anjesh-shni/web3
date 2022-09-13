@@ -22,7 +22,7 @@ class _TopBarContentState extends State<TopBarContent> {
   Widget build(BuildContext context) {
     var screensize=MediaQuery.of(context).size;
     return  Container(
-        color: Colors.grey.shade600,
+        color: Colors.grey.shade500,
         child: Padding(
           padding: const EdgeInsets.all(5.0),
           child: Row(
