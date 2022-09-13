@@ -62,7 +62,7 @@ class BottomBar extends StatelessWidget {
                 heading: 'SOCIAL',
                 s1: 'Linked-In',
                 s2: 'Github/anjesh-shni',
-                s3: 'Facebook',
+                s3: 'Facebook/anjesh-shni',
               ),
                     Container(
                       color: Colors.white,
@@ -79,7 +79,7 @@ class BottomBar extends StatelessWidget {
                         const SizedBox(height: 5),
                         InfoText(
                           type: 'Address',
-                          text: 'Aakasedhara, Budhanilkanth-9, Kathmandu',
+                          text: 'Ektabasti, Budhanilkanth-9, Kathmandu',
                         )
                       ],
                     ),
@@ -90,7 +90,7 @@ class BottomBar extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'Copyright © 2022 | Anjesh',
+                  'Copyright © 2022 | anjesh',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14,

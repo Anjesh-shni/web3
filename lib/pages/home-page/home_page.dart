@@ -6,6 +6,7 @@ import 'package:web3/pages/widget/carousel.dart';
 import 'package:web3/pages/widget/featured_heading.dart';
 import 'package:web3/pages/widget/featured_tiles.dart';
 import 'package:web3/pages/widget/main_heading.dart';
+import 'package:web3/pages/widget/menu_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -45,11 +46,26 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
-        
-        preferredSize: Size(screenSize.width,65),
+      appBar: screenSize.width<800?
+      AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        iconTheme: const IconThemeData(color: Colors.black),
+        title: const Text(
+                  "WEB3",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize:25,
+                   fontWeight: FontWeight.normal,
+                   letterSpacing: 1,
+                  ),
+                ),
+        ):
+        PreferredSize(  
+        preferredSize: Size(screenSize.width,70),
         child: TopBarContent(opacity: _opacity,),
         ),
+        drawer: const MenuDrawer(),
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(

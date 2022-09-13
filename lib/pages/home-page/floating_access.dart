@@ -71,7 +71,51 @@ class _FloatingAcessBarState extends State<FloatingAcessBar> {
               ? widget.screenSize.width / 12
               : widget.screenSize.width / 5,
         ),
-        child: Card(
+        child:widget.screenSize.width<800?
+        Column(
+          children: [
+          for(int i=0;i<items.length;i++)
+          Padding(
+            padding: EdgeInsets.only(bottom: widget.screenSize.height/30),
+            child: Card(
+              elevation: 10,
+              child: Padding(
+                padding:  EdgeInsets.only(
+                  top:widget.screenSize.height/45,
+                  bottom: widget.screenSize.height/45,
+                  left: widget.screenSize.width/40,
+                ),
+                child: Row(
+                  children: [
+                    Icon(icons[i]),
+                     SizedBox(width: widget.screenSize.width/50,),
+                    InkWell(
+                     splashColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                    onHover: (value){
+                    setState(() {
+                      value?_isHovering[i]=true:_isHovering[i]=false;
+                    });
+                      },
+                      onTap: (){
+            
+                      },
+                      child: Text(items[i],
+                      style: TextStyle(
+                    color: _isHovering[i]?
+                    Colors.green:
+                    Colors.black,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],): Card(
           elevation: 10,
           child: Padding(
             padding:  EdgeInsets.only(

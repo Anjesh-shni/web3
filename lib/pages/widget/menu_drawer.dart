@@ -9,7 +9,7 @@ class MenuDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Color(0xFF6158e6),
+        color: Colors.grey.shade800,
         child: Padding(
 
           padding: const EdgeInsets.all(16.0),
@@ -19,60 +19,60 @@ class MenuDrawer extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {},
-                child: Text(
-                  'Login',
-                  style: TextStyle(color: Colors.white, fontSize: 22),
+                child: const Text(
+                  'Home',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
+                padding: const EdgeInsets.only(top: 5.0, bottom: 2.0),
                 child: Divider(
                   color: Colors.blueGrey.shade400,
-                  thickness: 2,
+                  thickness: 1,
                 ),
               ),
               InkWell(
                 onTap: () {},
-                child: Text(
-                  'Sign Up',
-                  style: TextStyle(color: Colors.white, fontSize: 22),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-                child: Divider(
-                  color: Colors.blueGrey.shade400,
-                  thickness: 2,
-                ),
-              ),
-              InkWell(
-                onTap: () {},
-                child: Text(
+                child: const Text(
                   'Read',
-                  style: TextStyle(color: Colors.white, fontSize: 22),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                 child: Divider(
                   color: Colors.blueGrey.shade400,
-                  thickness: 2,
+                  thickness: 1,
                 ),
               ),
               InkWell(
                 onTap: () {},
-                child: Text(
+                child: const Text(
+                  'About Us',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
+                child: Divider(
+                  color: Colors.blueGrey.shade400,
+                  thickness: 1,
+                ),
+              ),
+              InkWell(
+                onTap: () {},
+                child: const Text(
                   'Contact Us',
-                  style: TextStyle(color: Colors.white, fontSize: 22),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ),
               Expanded(
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2021 | DBestech',
+                    'Copyright © 2022 | Grey-Elk@Anjesh',
                     style: TextStyle(
-                      color: Colors.blueGrey.shade300,
+                      color: Colors.blueGrey.shade200,
                       fontSize: 14,
                     ),
                   ),
