@@ -11,11 +11,15 @@ class FeaturedTiles extends StatelessWidget {
 
   final List<String> assets = [
     'assets/image/test1.jpeg',
-    'assets/image/test2.jpeg',
-    'assets/image/test3.jpeg',
+    'assets/image/web1.jpg',
+    'assets/image/web2.jpg',
   ];
 
-  final List<String> title = ['Sci-fi', 'Photography', 'Romance'];
+  final List<String> title = [
+    'Sci-fi',
+    'Coding is a language just like spanish and other',
+    'Learn how technology works'
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +42,7 @@ class FeaturedTiles extends StatelessWidget {
                               height: screenSize.width / 2.5,
                               width: screenSize.width / 1.5,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5.0),
+                                borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
                                   assets[pageIndex],
                                   fit: BoxFit.cover,
@@ -85,23 +89,22 @@ class FeaturedTiles extends StatelessWidget {
                         width: screenSize.width / 3.8,
                         child: Container(
                           decoration: BoxDecoration(
-                           borderRadius: BorderRadius.circular(20.0),
-                            image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              assets[pageIndex],
-                             // fit: BoxFit.cover,
-                            ),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                offset: const Offset(0, 10),
-                                blurRadius: 20,
-                                spreadRadius: 5,
-                                color:Colors.grey.withOpacity(0.3),
-                              )
-                            ]
-                          ),
+                              borderRadius: BorderRadius.circular(20.0),
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage(
+                                  assets[pageIndex],
+                                  // fit: BoxFit.cover,
+                                ),
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  offset: const Offset(0, 10),
+                                  blurRadius: 20,
+                                  spreadRadius: 5,
+                                  color: Colors.grey.withOpacity(0.3),
+                                )
+                              ]),
                         ),
                       ),
                       Padding(
