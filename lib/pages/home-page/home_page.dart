@@ -50,9 +50,9 @@ class _HomePageState extends State<HomePage> {
               backgroundColor: Colors.transparent,
               iconTheme: const IconThemeData(color: Colors.black),
               title: const Text(
-                "WEB3",
-                style: TextStyle(
-                  color: Colors.black,
+                "AQUOS",
+                style: TextStyle( 
+                  color: Colors.white,
                   fontSize: 25,
                   fontWeight: FontWeight.normal,
                   letterSpacing: 1,
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                     height: screenSize.height * 0.65,
                     width: screenSize.width,
                     child: Image.asset(
-                      "assets/image/web1.jpg",
+                      "assets/image/web7.jpg",
                       fit: BoxFit.cover,
                     ),
                   ),

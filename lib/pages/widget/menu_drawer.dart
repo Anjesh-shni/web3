@@ -8,10 +8,11 @@ class MenuDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      elevation: 10,
+      backgroundColor: Colors.grey,
       child: Container(
         color: Colors.grey.shade800,
         child: Padding(
-
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,7 +71,7 @@ class MenuDrawer extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2022 | Grey-Elk@Anjesh',
+                    'Copyright © 2022 | AQUOS',
                     style: TextStyle(
                       color: Colors.blueGrey.shade200,
                       fontSize: 14,

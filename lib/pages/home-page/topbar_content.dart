@@ -22,7 +22,7 @@ class _TopBarContentState extends State<TopBarContent> {
   Widget build(BuildContext context) {
     var screensize = MediaQuery.of(context).size;
     return Container(
-      color: Colors.grey.shade700,
+      color: Colors.black.withOpacity(.60),
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Row(
@@ -51,7 +51,7 @@ class _TopBarContentState extends State<TopBarContent> {
                   const Text(
                     "AQUOS",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -72,7 +72,7 @@ class _TopBarContentState extends State<TopBarContent> {
                         Text(
                           "Home",
                           style: TextStyle(
-                            color: _isHovering[0] ? Colors.white : Colors.black,
+                            color: _isHovering[0] ? Colors.black : Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -110,7 +110,7 @@ class _TopBarContentState extends State<TopBarContent> {
                         Text(
                           "Content",
                           style: TextStyle(
-                            color: _isHovering[1] ? Colors.white : Colors.black,
+                            color: _isHovering[1] ? Colors.black : Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -148,7 +148,7 @@ class _TopBarContentState extends State<TopBarContent> {
                         Text(
                           "About Us",
                           style: TextStyle(
-                            color: _isHovering[2] ? Colors.white : Colors.black,
+                            color: _isHovering[2] ? Colors.black : Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -186,7 +186,7 @@ class _TopBarContentState extends State<TopBarContent> {
                         Text(
                           "Contact",
                           style: TextStyle(
-                            color: _isHovering[3] ? Colors.white : Colors.black,
+                            color: _isHovering[3] ? Colors.black : Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -237,7 +237,7 @@ class _TopBarContentState extends State<TopBarContent> {
                           style: TextStyle(
                             color: _isHovering[4]
                                 ? Colors.blueGrey
-                                : const Color.fromARGB(255, 70, 44, 13),
+                                : Color.fromARGB(255, 159, 158, 157),
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -290,20 +290,6 @@ class _TopBarContentState extends State<TopBarContent> {
                                 fontWeight: FontWeight.w300,
                               ),
                             ),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 5,
-                        ),
-                        Visibility(
-                          maintainAnimation: true,
-                          maintainState: true,
-                          maintainSize: true,
-                          visible: _isHovering[5],
-                          child: Container(
-                            height: 2,
-                            width: 20,
-                            color: Colors.blueGrey,
                           ),
                         ),
                       ],
